@@ -1,0 +1,43 @@
+{
+  "name": "profile-service",
+  "version": "1.0.0",
+  "description": "Profile service for FinCoach Plus",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:integration": "jest --config jest.integration.config.js",
+    "test:performance": "jest --config jest.performance.config.js",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "dependencies": {
+    "@types/ioredis": "^4.28.10",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "ioredis": "^5.6.1",
+    "mongoose": "^6.0.0",
+    "node-cache": "^5.1.2",
+    "redis": "^4.0.0",
+    "winston": "^3.17.0",
+    "ws": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.0.0",
+    "@types/ws": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^27.0.6",
+    "mongodb-memory-server": "^8.0.0",
+    "nodemon": "^2.0.12",
+    "ts-jest": "^27.0.4",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.5.0"
+  }
+}

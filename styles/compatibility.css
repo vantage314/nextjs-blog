@@ -1,0 +1,97 @@
+/* 禁用动画时的样式 */
+.no-animation * {
+  animation: none !important;
+  transition: none !important;
+}
+
+/* 禁用过渡时的样式 */
+.no-transition * {
+  transition: none !important;
+}
+
+/* 禁用 Flexbox 时的样式 */
+.no-flexbox .flex-container {
+  display: block;
+}
+
+.no-flexbox .flex-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* 禁用 Grid 时的样式 */
+.no-grid .grid-container {
+  display: block;
+}
+
+.no-grid .grid-item {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  /* 调整布局 */
+  .ant-layout {
+    flex-direction: column;
+  }
+
+  .ant-layout-sider {
+    position: fixed;
+    z-index: 1000;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .ant-layout-content {
+    margin-left: 0 !important;
+    padding: 12px !important;
+  }
+
+  /* 调整表单 */
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+
+  .ant-form-item-label {
+    padding-bottom: 4px;
+  }
+
+  /* 调整卡片 */
+  .ant-card {
+    margin-bottom: 12px;
+  }
+
+  .ant-card-head {
+    padding: 0 12px;
+  }
+
+  .ant-card-body {
+    padding: 12px;
+  }
+
+  /* 调整按钮 */
+  .ant-btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  /* 调整列表 */
+  .ant-list-item {
+    padding: 8px 0;
+  }
+
+  /* 调整通知 */
+  .ant-notification {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* 调整弹窗 */
+  .ant-modal {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+} 
